@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var array =[{name:'suman', instructor:true},{name:'sujal', instructor:true},{name:'anjli', instructor:true}];
+        var key1='name';
+        var key2 ='instructor';
+        var extractKey =(array ,key1)=>   //how to px name
+        {
+            for(x of array)
+            {
+                console.log(key1[x]);
+            }
+        }
+        extractKey(array, key1);
+    </script>
+</body>
+</html>

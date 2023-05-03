@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr=[0,12, 10, 7, 3, 1 ];
+        var findindex=(arr , callback)=>
+        {
+            return callback(arr);
+        }
+        var findind=()=>
+        {
+            for(i=0 ; i<arr.length; i++)
+            {
+                if(arr[i] >= 10)
+                {
+                    return i;
+                    break;
+                }
+                if(arr[i] ===7)
+                {
+                    return i;
+                }
+            }
+        }
+
+
+        var findind2=()=>
+        {
+            for(i=0 ; i<arr.length; i++)
+            {
+               
+                if(arr[i] ===7)
+                {
+                    return i;
+                }
+            }
+        }
+        var a=findindex(arr, findind);
+        console.log(a);
+        var b = findind2(arr, findind);
+        console.log(b);
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let countdown = function(number)
+        {
+            let y= setInterval(decrement(number),1000);
+
+
+          /* if(y ==0)
+           {
+            console.log('Done');
+           }*/
+           //console.log(number);
+        }
+        let decrement =function(number)
+        {
+             number -= number;
+           // console.log(number);
+           if(number ==0)
+           {
+            console.log('Done');
+           }
+        }
+
+        let y =countdown(9);
+        console.log(y);
+    </script>
+</body>
+</html>

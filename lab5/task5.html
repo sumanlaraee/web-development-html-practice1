@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //isEven
+
+      let NumberFact = (number, callback) => {
+        // let val = isEven(number);
+        //let j = callback(number);
+        // return j;
+        return callback(number);
+      };
+      let isEven = (val) => {
+        if (val % 2 == 0) {
+          return true;
+        } else {
+          return false;
+        }
+      };
+      let y = NumberFact(58, isEven); //why is even
+      console.log(y);
+    </script>
+
+    <script>
+      function NumberFact2(number, callback) {
+        return callback(number);
+      }
+      function isodd(number) {
+        if (number % 2 != 0) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+
+      let z = NumberFact2(58, isodd);
+      console.log(z);
+    </script>
+
+    <script>
+      let NumberFact3 = function (number, callback) {
+        return callback(number);
+      };
+      let isprime = (val) => {
+        if (val < 2) {
+          return false;
+        } else {
+          for (var i = 0; i <= val/ 2; i++) {
+            if (val % i === 0) {
+              return false;
+            } else {
+              return true;
+            }
+          }
+        }
+      };
+
+      //let res = NumberFact(13, isprime);
+      let res = NumberFact(12, isprime);
+      console.log(res);
+    </script>
+    array
+  </body>
+</html>
