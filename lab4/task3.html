@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        function string_printing(a)
+        {
+            print(typeof(a.Name))
+            if (typeof(a.Name) == String)  //errors in this code 
+            {
+                print(a.Name)              
+                print(typeof(a.Name))
+            }
+            else 
+            {
+                console.log('no string ')
+            }
+            
+
+        }
+        var obj ={Name: 'suman', age: 88, caste:'laraee'}
+        
+        string_printing(obj)
+
+    </script>
+</body>
+</html>
